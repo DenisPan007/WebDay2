@@ -1,0 +1,7 @@
+File for testing ReaderFile
+testing string
+more one testing string)
+0,0,27;0,0,0;4,6
+0,2,27;0,0,3;4,6
+0,2a,27;0,0,3;4,6
+0,2,6;0,0,6;4,6
