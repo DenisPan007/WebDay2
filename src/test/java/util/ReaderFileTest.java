@@ -12,7 +12,7 @@ public class ReaderFileTest {
     }
     @Test
     public void readFileNotSuccess() throws NotReadFileException {
-        String filePath = "Data.txt";
+        String filePath = "src/test/Data.txt";
         ReaderFile.readFile(filePath);
     }
 }
