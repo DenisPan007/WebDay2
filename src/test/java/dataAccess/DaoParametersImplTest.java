@@ -2,8 +2,10 @@ package dataAccess;
 
 import entity.Figures.Point3d;
 import entity.Figures.PolygonRegular;
+import entity.Figures.Pyramid;
 import entity.ParametersWarehouse.WarehouseOfParameters;
 import entity.ParametersWarehouse.WarehouseOfParameters2D;
+import entity.ParametersWarehouse.WarehouseOfParameters3D;
 import org.junit.Test;
 import dataBases.DataBaseOfFigureParameters;
 
@@ -19,8 +21,8 @@ public class DaoParametersImplTest {
         DataBaseOfFigureParameters dataBaseActual = DataBaseOfFigureParameters.getInstance();
         DaoParametersImpl dao = new DaoParametersImpl(dataBaseActual);
         dataBaseActual.get().clear();
-        PolygonRegular p1 = new PolygonRegular();
-        WarehouseOfParameters w1 = new WarehouseOfParameters2D(1, 2);
+        Pyramid p1 = new Pyramid();
+        WarehouseOfParameters w1 = new WarehouseOfParameters3D(1, 2,3);
         dao.add(p1.getId(),w1);
         Map<Integer, WarehouseOfParameters> mapExpected = new HashMap<>();
         mapExpected.put(p1.getId(),w1);

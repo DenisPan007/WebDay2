@@ -36,17 +36,14 @@ public class PolygonRegular extends Figure {
 
     public void setMiddlePoint(Point3d middlePoint) {
         this.middlePoint = middlePoint;
-        notifyObservers();
     }
 
     public void setEdgeNumber(int edgeNumber) {
         this.edgeNumber = edgeNumber;
-        notifyObservers();
     }
 
     public void setEdgeSize(double edgeSize) {
         this.edgeSize = edgeSize;
-        notifyObservers();
     }
 
     @Override

@@ -1,9 +1,6 @@
 package entity.Figures;
 
-
-import servise.util.observer.ObservableImpl;
-
-public abstract class Figure extends ObservableImpl {
+public abstract class Figure  {
     private static int idCounter = 0;
     {idCounter++;}
     private int id = idCounter;

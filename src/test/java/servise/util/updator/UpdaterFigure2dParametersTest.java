@@ -2,6 +2,7 @@ package servise.util.updator;
 
 import entity.Figures.Point3d;
 import entity.Figures.PolygonRegular;
+import entity.ObservableFigures.ObservablePolygonRegular;
 import entity.ParametersWarehouse.WarehouseOfParameters;
 import entity.ParametersWarehouse.WarehouseOfParameters2D;
 import org.junit.Test;
@@ -11,6 +12,7 @@ import servise.action.CounterParametersPolygonRegular;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Observable;
 
 import static org.junit.Assert.*;
 
@@ -23,7 +25,7 @@ public class UpdaterFigure2dParametersTest {
         dataBase.get().clear();
         CounterParameters2d counter = new CounterParametersPolygonRegular();
         UpdaterFigureParameters updater = new UpdaterFigure2dParameters(counter);
-        PolygonRegular p = new PolygonRegular(new Point3d(),3,3);
+        ObservablePolygonRegular p = new ObservablePolygonRegular(new Point3d(),3,3);
         p.addObserver(updater);
         p.setEdgeNumber(3);
         p.setEdgeNumber(4);

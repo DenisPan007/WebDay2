@@ -2,12 +2,14 @@ package servise.util.updator;
 
 import entity.Figures.Point3d;
 import entity.Figures.Pyramid;
+import entity.ObservableFigures.ObservablePyramid;
 import entity.ParametersWarehouse.WarehouseOfParameters;
 import entity.ParametersWarehouse.WarehouseOfParameters3D;
 import org.junit.Test;
 import dataBases.DataBaseOfFigureParameters;
 import servise.action.CounterParameters3d;
 import servise.action.CounterParametersPyramid;
+import servise.util.observer.Observable;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +25,7 @@ public class UpdaterFigure3dParametersTest {
         dataBaseActual.get().clear();
         CounterParameters3d counter = new CounterParametersPyramid();
         UpdaterFigureParameters updater = new UpdaterFigure3dParameters(counter);
-        Pyramid p = new Pyramid(new Point3d(),new Point3d(),4,8);
+        ObservablePyramid p = new ObservablePyramid(new Point3d(),new Point3d(),4,8);
         p.addObserver(updater);
         p.setTopPoint(new Point3d(1,2,3));
         p.setTopPoint(new Point3d(0,0,3));

@@ -20,16 +20,9 @@ public class WarehouseOfParameters2D extends WarehouseOfParameters {
         return perimeter;
     }
 
-    public void setPerimeter(double perimeter) {
-        this.perimeter = perimeter;
-    }
 
     public double getSquare() {
         return square;
-    }
-
-    public void setSquare(double square) {
-        this.square = square;
     }
 
     @Override

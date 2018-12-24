@@ -22,7 +22,6 @@ public class Point3d extends Figure {
 
     public void setX(double x) {
         this.x = x;
-        notifyObservers();
     }
 
     public double getY() {
@@ -31,7 +30,6 @@ public class Point3d extends Figure {
 
     public void setY(double y) {
         this.y = y;
-        notifyObservers();
     }
 
     public double getZ() {
@@ -40,7 +38,6 @@ public class Point3d extends Figure {
 
     public void setZ(double z) {
         this.z = z;
-        notifyObservers();
     }
 
     @Override

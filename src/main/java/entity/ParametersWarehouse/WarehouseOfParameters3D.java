@@ -8,17 +8,10 @@ public class WarehouseOfParameters3D extends WarehouseOfParameters2D {
         this.volume = volume;
     }
 
-    public WarehouseOfParameters3D(double volume) {
-        this.volume = volume;
-    }
-
     public double getVolume() {
         return volume;
     }
 
-    public void setVolume(double volume) {
-        this.volume = volume;
-    }
 
     @Override
     public boolean equals(Object o) {

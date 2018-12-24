@@ -29,7 +29,6 @@ public class Pyramid extends Figure {
 
     public void setTopPoint(Point3d topPoint) {
         this.topPoint = topPoint;
-        notifyObservers();
     }
     public PolygonRegular getBasis() {
         return new PolygonRegular(basis.getMiddle(),basis.getEdgeNumber(),basis.getEdgeSize());
@@ -37,7 +36,6 @@ public class Pyramid extends Figure {
 
     public void setBasis(PolygonRegular basis) {
         this.basis = basis;
-        notifyObservers();
     }
 
     @Override
